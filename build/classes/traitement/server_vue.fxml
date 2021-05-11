@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="683.0" style="-fx-background-color: F6F5F8;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contro_traitement.Server_vueController">
+   <children>
+      <AnchorPane layoutX="43.0" layoutY="-1.0" prefHeight="50.0" prefWidth="119.0">
+         <children>
+            <Text fill="#000000c4" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tous le message" wrappingWidth="118.00000262260437">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <HBox layoutX="1.0" layoutY="16.0" prefHeight="22.0" prefWidth="84.0" spacing="1.0">
+               <children>
+                  <AnchorPane prefHeight="29.0" prefWidth="9.0">
+                     <children>
+                        <Label fx:id="signal1" layoutY="5.0" prefHeight="16.0" prefWidth="13.0" styleClass="cursor" text="R" textFill="#273971">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="29.0" prefWidth="70.0">
+                     <children>
+                        <Label fx:id="signal11" layoutY="2.0" prefHeight="29.0" prefWidth="70.0" styleClass="cursor" text="00" textFill="#273971">
+                           <font>
+                              <Font name="Arial Black" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="173.0" layoutY="-1.0" prefHeight="50.0" prefWidth="119.0">
+         <children>
+            <Text fill="#000000c4" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message Traiter" wrappingWidth="118.00000262260437">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <HBox layoutX="1.0" layoutY="16.0" prefHeight="22.0" prefWidth="84.0" spacing="1.0">
+               <children>
+                  <AnchorPane prefHeight="29.0" prefWidth="9.0">
+                     <children>
+                        <Label layoutY="5.0" prefHeight="16.0" prefWidth="13.0" styleClass="cursor" text="T" textFill="#273971">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="29.0" prefWidth="70.0">
+                     <children>
+                        <Label fx:id="signal111" layoutY="2.0" prefHeight="29.0" prefWidth="70.0" styleClass="cursor" text="00" textFill="#273971">
+                           <font>
+                              <Font name="Arial Black" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pan11" layoutX="41.0" layoutY="58.0" onMouseClicked="#loadDetail" prefHeight="181.0" prefWidth="618.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2; -fx-background-color: F6F5F8; -fx-background-radius: 5px; -fx-border-radius: 5px;" AnchorPane.bottomAnchor="261.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="58.0">
+         <children>
+            <Text fill="#000000c4" layoutX="10.299999999999999" layoutY="28.376171875000004" strokeType="OUTSIDE" strokeWidth="0.0" text="Sereveur en attente" AnchorPane.topAnchor="15.300000000000004">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="533.9" layoutY="16.200000000000006" prefHeight="46.0" prefWidth="70.0" AnchorPane.rightAnchor="13.100000000000023" AnchorPane.topAnchor="16.200000000000006">
+               <children>
+                  <Label fx:id="countMessage" alignment="CENTER" contentDisplay="RIGHT" prefHeight="29.0" prefWidth="70.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2;" text="00" textFill="#273971">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <MaterialDesignIconView fill="#ff77008f" glyphName="COMMENT_MULTIPLE_OUTLINE" size="20" />
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="image" fitHeight="148.0" fitWidth="133.0" layoutX="84.09999999999994" layoutY="-39.899999999999984" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="84.09999999999994" AnchorPane.topAnchor="-39.899999999999984" />
+            <VBox fx:id="hbxMssg" layoutX="11.399999999999999" layoutY="49.80000000000004" prefHeight="131.0" prefWidth="596.0" AnchorPane.bottomAnchor="0.7999999999999261" AnchorPane.leftAnchor="11.399999999999999" AnchorPane.rightAnchor="11.20000000000016" AnchorPane.topAnchor="49.80000000000004" />
+         </children>
+      </AnchorPane>
+      <HBox layoutX="41.0" layoutY="264.0" spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="24.0">
+         <children>
+            <AnchorPane fx:id="pan1111" onMouseClicked="#loadDetail" prefHeight="216.0" prefWidth="371.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2; -fx-background-color: F6F5F8; -fx-background-radius: 5px; -fx-border-radius: 5px;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="signal111111" alignment="CENTER" layoutX="11.0" layoutY="11.0" prefHeight="29.0" prefWidth="264.0" text="Opération en cours de traitement" textFill="#000000c4">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <MaterialDesignIconView fill="#ff77008f" glyphName="COMPARE" size="20" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="en_attente" alignment="CENTER" contentDisplay="RIGHT" layoutX="337.0" layoutY="12.0" prefHeight="29.0" prefWidth="42.0" styleClass="cursor" text="00" AnchorPane.rightAnchor="10.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="27.1" layoutY="47.0" prefHeight="160.0" prefWidth="347.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="15.0">
+                     <content>
+                        <HBox fx:id="hbx" prefHeight="140.0" prefWidth="343.0" spacing="5.0" style="-fx-background-color: F6F5F8;" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pan111" onMouseClicked="#loadDetail" prefHeight="216.0" prefWidth="214.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2; -fx-background-color: F6F5F8; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+               <children>
+                  <Circle fill="#1f93ff00" layoutX="111.0" layoutY="131.0" opacity="0.26" radius="74.0" smooth="false" stroke="#f6891f" strokeType="INSIDE" strokeWidth="12.0" />
+                  <CubicCurve controlX1="-17.05118179321289" controlX2="33.0" controlY1="-55.89646530151367" controlY2="69.0" endX="63.0" endY="2.0" fill="#4a4a4a" layoutX="122.0" layoutY="130.0" opacity="0.1" rotate="-5.7" startX="-84.04141235351562" startY="0.6840229630470276" stroke="#f6f5f8" />
+                  <AnchorPane layoutX="24.0" layoutY="75.0">
+                     <children>
+                        <Label fx:id="txtTotal" alignment="CENTER" layoutX="72.0" layoutY="36.0" prefHeight="38.0" prefWidth="35.0" style="-fx-border-color: #002679; -fx-border-width: 0.25; -fx-border-radius: 10px;" text="00" textFill="#002679">
+                           <font>
+                              <Font name="Ebrima Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="2.0" layoutY="2.0">
+                           <children>
+                              <Label fx:id="airtel_" alignment="CENTER" layoutX="1.0" prefHeight="29.0" prefWidth="63.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.3; -fx-border-radius: 4px;" styleClass="cursor" text="00" textFill="#273971">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <MaterialDesignIconView fill="#a81a1a" glyphName="TRENDING_UP" size="20" />
+                                 </graphic>
+                              </Label>
+                              <Label fx:id="orange_" alignment="CENTER" contentDisplay="RIGHT" layoutX="110.0" prefHeight="29.0" prefWidth="63.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.3; -fx-border-radius: 4px;" styleClass="cursor" text="00" textFill="#273971">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <MaterialDesignIconView fill="#a81a1a" glyphName="TRENDING_UP" size="20" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="-2.0" layoutY="87.0">
+                           <children>
+                              <Label fx:id="vodacom_" alignment="CENTER" contentDisplay="RIGHT" layoutX="60.0" prefHeight="29.0" prefWidth="63.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.3; -fx-border-radius: 4px;" styleClass="cursor" text="00" textFill="#273971">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="13.0" />
+                                 </font>
+                                 <graphic>
+                                    <MaterialDesignIconView fill="#a81a1a" glyphName="TRENDING_UP" size="20" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="signal11111" alignment="CENTER" layoutX="21.0" layoutY="11.0" prefHeight="29.0" prefWidth="173.0" text="statistique Journaliere" textFill="#000000c4">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <MaterialDesignIconView fill="#ff77008f" glyphName="CHART_PIE" size="24" />
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

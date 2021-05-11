@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="113.0" prefWidth="337.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contro_traitement.ReceptionController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #273a70; -fx-background-radius: 50px;">
+         <children>
+            <MaterialDesignIconView fill="WHITE" glyphName="COMMENT_PROCESSING_OUTLINE" layoutX="7.0" layoutY="28.0" size="22" />
+         </children>
+      </AnchorPane>
+      <Text fx:id="reseau" fill="#273a70f0" layoutX="48.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orange" wrappingWidth="54.32519352436066">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="numero" fill="#000000f0" layoutX="47.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+243999026241">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="date" fill="#00000075" layoutX="169.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orange" textAlignment="RIGHT" wrappingWidth="163.32519352436066">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="mssg" fill="#00000090" layoutX="46.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trans. ID:PP140l9V2T Vous vez recu 1.5000 USD de 999026241 Bin. Votre solde est de 10.0005 USD." wrappingWidth="277.0244140625">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

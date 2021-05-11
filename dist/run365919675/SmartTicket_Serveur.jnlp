@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SmartTicket_Serveur.jnlp">
+  <information>
+    <title>SmartTicket_Serveur</title>
+    <vendor>smartTicket</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SmartTicket_Serveur.jar" size="6214903" download="eager" />
+    <jar href="lib\AnimateFX-1.2.0.jar" size="85823" download="eager" />
+    <jar href="lib\converter-gson-2.3.0.jar" size="5852" download="eager" />
+    <jar href="lib\fontawesomefx-glyphsbrowser-all-1.0.jar" size="1662483" download="eager" />
+    <jar href="lib\gson-2.7.jar" size="231952" download="eager" />
+    <jar href="lib\jcommon-1.0.23.jar" size="330246" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2142035" download="eager" />
+    <jar href="lib\log4j.jar" size="367444" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin_1.jar" size="827921" download="eager" />
+    <jar href="lib\okhttp-3.0.0.jar" size="330198" download="eager" />
+    <jar href="lib\okio-1.13.0.jar" size="81811" download="eager" />
+    <jar href="lib\retrofit-2.3.0.jar" size="90692" download="eager" />
+    <jar href="lib\smslib-2.1.4.jar" size="64941" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="smartticket_serveur.SmartTicket_Serveur"  name="SmartTicket_Serveur" />
+  <update check="always"/>
+</jnlp>

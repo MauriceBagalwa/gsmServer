@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="647.0" style="-fx-background-color: F6F7FB;" stylesheets="@../styles/style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="contro_parametre.UsrerController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="42.0" prefWidth="617.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2; -fx-background-color: fff; -fx-background-radius: 3px; -fx-border-radius: 3px;" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Text fill="#566373" layoutX="34.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuration actuelle de la DB" wrappingWidth="200.8000042438507">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#273971" glyphName="GEAR" layoutX="13.0" layoutY="27.0" size="16" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="58.0" prefHeight="216.0" prefWidth="618.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2; -fx-background-color: fff; -fx-background-radius: 3px; -fx-border-radius: 3px;">
+         <children>
+            <AnchorPane prefHeight="54.0" prefWidth="617.0" style="-fx-border-color: #9A998F; -fx-border-width: 0  0 0.2 0; -fx-background-radius: 5px;">
+               <children>
+                  <Text fill="#566373" layoutX="53.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" textAlignment="CENTER" wrappingWidth="89.80000424385071">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="2.0" layoutY="20.799999999999926" prefHeight="18.0" prefWidth="32.0" style="-fx-border-color: #273971; -fx-border-width: 0  0 1.5 0; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="11.0" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: F5F6F6; -fx-background-radius: 50;" text="A">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#0000003e" layoutX="53.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="all privillege" textAlignment="CENTER" wrappingWidth="89.80000424385071">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="429.0" layoutY="15.0" prefHeight="25.0" prefWidth="180.0" styleClass="curso" text="modifier mon mot de passe ?" textFill="#273971">
+                     <font>
+                        <Font name="Century Gothic" size="11.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="64.0" layoutY="69.0" prefHeight="53.0" prefWidth="246.0">
+               <children>
+                  <AnchorPane layoutY="21.0" prefHeight="31.0" prefWidth="246.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.1; -fx-background-color: F6F7FB; -fx-background-radius: 3px; -fx-border-radius: 3px;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="0.4" layoutY="1.0" prefHeight="29.0" prefWidth="41.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0 0;" styleClass="cursor" text="Connecter" textFill="#797979" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="MIXCLOUD" rotate="-47.6" size="15" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="name" layoutX="43.0" layoutY="3.0" prefHeight="25.0" prefWidth="201.0" promptText="Nom de l'utilisateur" style="-fx-background-color: F6F7FB;" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#566373" layoutX="15.0" layoutY="11.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="111.68846440315247">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView fill="#00000062" glyphName="SORT_DESC" layoutX="1.0" layoutY="12.0" size="15" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="64.0" layoutY="130.0" prefHeight="53.0" prefWidth="246.0">
+               <children>
+                  <AnchorPane layoutY="21.0" prefHeight="31.0" prefWidth="246.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.1; -fx-background-color: F6F7FB; -fx-background-radius: 3px; -fx-border-radius: 3px;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="0.4" layoutY="1.0" prefHeight="29.0" prefWidth="41.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0 0;" styleClass="cursor" text="Connecter" textFill="#797979" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="MIXCLOUD" rotate="-47.6" size="15" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="prenom" layoutX="43.0" layoutY="3.0" prefHeight="25.0" prefWidth="201.0" promptText="Prénom de l'utilisateur" style="-fx-background-color: F6F7FB;" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#566373" layoutX="15.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" wrappingWidth="111.68846440315247">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView fill="#00000062" glyphName="SORT_DESC" layoutX="1.0" layoutY="12.0" size="15" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="336.0" layoutY="68.0" prefHeight="53.0" prefWidth="246.0">
+               <children>
+                  <AnchorPane layoutY="21.0" prefHeight="31.0" prefWidth="246.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.1; -fx-background-color: F6F7FB; -fx-background-radius: 3px; -fx-border-radius: 3px;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="0.4" layoutY="1.0" prefHeight="29.0" prefWidth="41.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0 0;" styleClass="cursor" text="Connecter" textFill="#797979" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="MIXCLOUD" rotate="-47.6" size="15" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="mail" layoutX="43.0" layoutY="3.0" prefHeight="25.0" prefWidth="201.0" promptText="Adresse mail" style="-fx-background-color: F6F7FB;" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#566373" layoutX="15.0" layoutY="11.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail" wrappingWidth="111.68846440315247">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView fill="#00000062" glyphName="SORT_DESC" layoutX="1.0" layoutY="12.0" size="15" />
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="336.0" layoutY="152.0" prefHeight="31.0" prefWidth="246.0" style="-fx-background-color: #273971;" styleClass="curso" text="Enregistrer" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="284.0" prefHeight="216.0" prefWidth="618.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2; -fx-background-color: fff; -fx-background-radius: 3px; -fx-border-radius: 3px;">
+         <children>
+            <AnchorPane prefHeight="54.0" prefWidth="617.0" style="-fx-border-color: #9A998F; -fx-border-width: 0  0 0.2 0; -fx-background-radius: 5px;">
+               <children>
+                  <Text fill="#566373" layoutX="32.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction local" wrappingWidth="89.80000424385071">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="2.0" layoutY="20.799999999999926" prefHeight="18.0" prefWidth="32.0" style="-fx-border-color: #273971; -fx-border-width: 0  0 1.5 0; -fx-background-radius: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+                  <Text fill="#0000003e" layoutX="117.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="la transaction locol est une opération qui consiste a enregistrer une operation de paiement manuellement" wrappingWidth="406.8000042438507">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contro_traitement.LastmessageController">
+   <children>
+      <AnchorPane prefHeight="97.0" prefWidth="289.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.3; -fx-background-color: fff; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <AnchorPane layoutX="8.0" layoutY="10.0" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #273a70; -fx-background-radius: 50px;">
+               <children>
+                  <MaterialDesignIconView fill="WHITE" glyphName="COMMENT_PROCESSING_OUTLINE" layoutX="5.0" layoutY="20.0" size="16" />
+               </children>
+            </AnchorPane>
+            <Text fx:id="reseau" fill="#273a70f0" layoutX="46.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orange" wrappingWidth="54.32519352436066">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="numero" fill="#000000f0" layoutX="43.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+243999026241">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="mssg" fill="#00000090" layoutX="44.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trans. ID:PP140l9V2T Vous vez recu 1.5000 USD de 999026241 Bin. Votre solde est de 10.0005 USD." wrappingWidth="237.0244140625">
+               <font>
+                  <Font name="Century Gothic" size="11.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

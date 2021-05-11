@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" opacity="0.89" prefHeight="187.0" prefWidth="180.0" style="-fx-background-color: fff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="conto_errors.ServeurController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="11.0" layoutY="88.0" opacity="0.89" prefHeight="55.0" prefWidth="180.0" style="-fx-background-color: ff4646;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MaterialDesignIconView fill="WHITE" glyphName="CLOSE_CIRCLE_OUTLINE" layoutX="73.0" layoutY="39.0" size="35" />
+         </children>
+      </AnchorPane>
+      <Text fill="#000000b1" layoutX="25.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Une Erreur est survenu">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="13.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oh no !" textAlignment="CENTER" wrappingWidth="150.234375">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="64.0" layoutY="149.0" prefHeight="27.0" prefWidth="49.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2; -fx-background-color: ff4646; -fx-background-radius: 3px; -fx-border-radius: 3px;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="2.0" onMouseClicked="#demarerSAirtel" prefHeight="26.0" prefWidth="44.0" styleClass="cursor" text="Ok" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

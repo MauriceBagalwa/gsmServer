@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane onMouseClicked="#getInfo" prefHeight="30.0" prefWidth="665.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contro_traitement.MoneytraiterController">
+   <children>
+      <GridPane prefHeight="30.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="30.0" prefWidth="39.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="RIGHT" onMouseClicked="#more" prefHeight="24.0" prefWidth="39.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0 0.2 0;" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#a1a1a1" glyphName="SHARE_SQUARE_ALT" size="16" />
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="28.0" prefWidth="116.0" GridPane.columnIndex="2">
+               <children>
+                  <Label fx:id="num" alignment="CENTER" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="112.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0 0.2 0;" text="Numéro" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="87.0" GridPane.columnIndex="3">
+               <children>
+                  <Label fx:id="reseau" alignment="CENTER" contentDisplay="RIGHT" layoutX="1.0" prefHeight="24.0" prefWidth="112.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0 0.2 0;" text="Reseau" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="87.0" GridPane.columnIndex="4">
+               <children>
+                  <Label fx:id="montant" alignment="CENTER" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="312.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0 0.2 0;" text="Montant" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="28.0" prefWidth="152.0" GridPane.columnIndex="1">
+               <children>
+                  <Label fx:id="reference" alignment="CENTER" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="112.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0 0.2 0;" text="Reference" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="87.0" GridPane.columnIndex="6">
+               <children>
+                  <Label fx:id="code" alignment="CENTER" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="312.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0 0.2 0;" text="Code" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="44.0" GridPane.columnIndex="7">
+               <children>
+                  <CheckBox fx:id="etat" disable="true" graphicTextGap="6.0" layoutX="15.0" layoutY="5.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="19.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="53.0" GridPane.columnIndex="5">
+               <children>
+                  <Label fx:id="devise" alignment="CENTER" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="312.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0 0.2 0;" text="Devise" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</StackPane>

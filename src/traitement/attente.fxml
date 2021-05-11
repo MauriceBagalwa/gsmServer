@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pan112" onMouseClicked="#loadDetail" prefHeight="138.0" prefWidth="124.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.3; -fx-background-color: F6F5F8; -fx-background-radius: 5px; -fx-border-radius: 5px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contro_traitement.AttenteController">
+    <children>
+        <Text fx:id="reseau" fill="#fb010182" layoutX="7.000000000000001" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Airtel" wrappingWidth="111.6884765625">
+            <font>
+                <Font name="Century Gothic Bold" size="13.0" />
+            </font>
+        </Text>
+        <Text layoutX="14.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro" wrappingWidth="68.00000113248825">
+            <font>
+                <Font name="Century Gothic" size="12.0" />
+            </font>
+        </Text>
+        <Label fx:id="num" layoutX="15.0" layoutY="53.0" prefHeight="16.0" prefWidth="100.0" styleClass="cursor" text="938383744" textFill="#000000ab">
+            <font>
+                <Font name="Century Gothic Bold" size="13.0" />
+            </font>
+        </Label>
+        <Text fx:id="date" fill="#566373" layoutX="12.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="99.57567647099495">
+            <font>
+                <Font name="Century Gothic" size="10.0" />
+            </font>
+        </Text>
+      <Label fx:id="montant" layoutX="45.0" layoutY="76.0" prefHeight="16.0" prefWidth="68.0" styleClass="cursor" text="00.0" textFill="#00000075">
+         <font>
+            <Font name="Century Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="devise" layoutX="15.0" layoutY="76.0" prefHeight="16.0" prefWidth="32.0" styleClass="cursor" text="USD" textAlignment="RIGHT" textFill="#000000c4">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="374.0" style="-fx-background-color: FDFDFD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contro_parametre.ConfigModemController">
+   <children>
+      <AnchorPane layoutX="74.0" layoutY="15.0" prefHeight="39.0" prefWidth="257.0" style="-fx-background-color: #4B62C1;">
+         <children>
+            <Text fill="#ebebeb" layoutX="22.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuration du serveur">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="27.0" layoutY="15.0" prefHeight="39.0" prefWidth="41.0" style="-fx-background-color: #4B62C1;">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="GEAR" layoutX="11.0" layoutY="27.0" size="19" text="" />
+         </children>
+      </AnchorPane>
+      <GridPane layoutX="64.0" layoutY="69.0" vgap="20.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane>
+               <children>
+                  <AnchorPane layoutY="21.0" prefHeight="31.0" prefWidth="251.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.1; -fx-background-color: F6F5F8; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="0.4" layoutY="1.0" prefHeight="29.0" prefWidth="41.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0 0;" styleClass="cursor" text="Connecter" textFill="#797979" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="MIXCLOUD" rotate="-47.6" size="15" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="modem" layoutX="43.0" layoutY="3.0" prefHeight="25.0" prefWidth="199.0" promptText="Nom du Modem" style="-fx-background-color: F6F5F8;">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#566373" layoutX="1.0" layoutY="11.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du Modem" wrappingWidth="111.68846440315247">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.rowIndex="1">
+               <children>
+                  <AnchorPane layoutY="20.0" prefHeight="31.0" prefWidth="251.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.1; -fx-background-color: F6F5F8; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="0.4" layoutY="1.0" prefHeight="29.0" prefWidth="41.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0 0;" styleClass="cursor" text="Connecter" textFill="#797979" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="BOOKMARK_ALT" size="15" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="bitTemporisation" disable="true" layoutX="43.0" layoutY="3.0" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: F6F5F8;" text="9600">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#566373" layoutX="2.0" layoutY="11.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIt de temporisation" wrappingWidth="172.68846440315247">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.rowIndex="2">
+               <children>
+                  <AnchorPane layoutY="23.0" prefHeight="31.0" prefWidth="251.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.1; -fx-background-color: F6F5F8; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="0.4" layoutY="1.0" prefHeight="29.0" prefWidth="41.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0 0;" styleClass="cursor" text="Connecter" textFill="#797979" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="BOOKMARK_ALT" size="15" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="centreMssg" layoutX="43.0" layoutY="3.0" prefHeight="25.0" prefWidth="199.0" promptText="Centre de messagerie" style="-fx-background-color: F6F5F8;">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#566373" layoutX="1.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centre de messagerie" wrappingWidth="216.9999995827675">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.rowIndex="3">
+               <children>
+                  <AnchorPane layoutX="-0.0691986083984375" layoutY="20.0" prefHeight="31.0" prefWidth="118.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.1; -fx-background-color: F6F5F8; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                     <children>
+                        <TextField fx:id="port" layoutX="43.0" layoutY="3.0" prefHeight="25.0" prefWidth="69.0" promptText="Port com" style="-fx-background-color: F6F5F8;">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutY="1.0" prefHeight="29.0" prefWidth="41.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0 0;" styleClass="cursor" text="Connecter" textFill="#797979">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="MIXCLOUD" rotate="-47.6" size="15" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#566373" layoutX="5.9308013916015625" layoutY="11.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port Com" wrappingWidth="79.68846440315247">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="132.93080139160156" layoutY="20.0" prefHeight="31.0" prefWidth="118.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.1; -fx-background-color: F6F5F8; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="0.4" layoutY="1.0" prefHeight="29.0" prefWidth="41.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0 0;" styleClass="cursor" text="Connecter" textFill="#797979" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#7c7c7c" glyphName="LOCK" size="17" />
+                           </graphic>
+                        </Label>
+                        <TextField fx:id="pin" disable="true" layoutX="44.0" layoutY="3.0" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: F6F5F8;" text="1234">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#566373" layoutX="142.93080139160156" layoutY="11.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pin" wrappingWidth="79.68846440315247">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <JFXButton fx:id="button" buttonType="RAISED" layoutX="201.0" layoutY="353.0" onMouseClicked="#config" prefHeight="26.0" prefWidth="112.0" style="-fx-background-color: #4B62C1;" styleClass="cursor" text="Configurer" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="GEAR" size="15" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

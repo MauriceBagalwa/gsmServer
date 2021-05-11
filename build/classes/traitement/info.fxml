@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="163.0" prefWidth="378.0" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contro_traitement.InfoController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="4.0" prefHeight="160.0" prefWidth="378.0" style="-fx-background-color: fff;" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="-4.0">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="7.0" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #273a70; -fx-background-radius: 50px;">
+               <children>
+                  <MaterialDesignIconView fill="WHITE" glyphName="COMMENT_PROCESSING_OUTLINE" layoutX="7.0" layoutY="28.0" size="22" />
+               </children>
+            </AnchorPane>
+            <Text fx:id="reseau" fill="#273a70f0" layoutX="47.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orange" wrappingWidth="54.32519352436066">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="reference" fill="#000000f0" layoutX="47.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="264.17041015625">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="36.0" layoutY="49.0" prefHeight="72.0" prefWidth="339.0">
+               <children>
+                  <AnchorPane layoutX="66.0" prefHeight="36.0" prefWidth="135.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0 0  0;">
+                     <children>
+                        <Text fx:id="numero" fill="#707172" layoutX="9.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="125.99999460577965" AnchorPane.leftAnchor="9.0">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#566373" layoutX="10.0" layoutY="8.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero" wrappingWidth="56.999993681907654" AnchorPane.leftAnchor="10.0">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="67.0" layoutY="33.0" prefHeight="37.0" prefWidth="264.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2 0 0  0.2;">
+                     <children>
+                        <Text fx:id="etat" fill="#b96262" layoutX="6.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.00000367499888">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="-1.0" prefHeight="36.0" prefWidth="68.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0 0;">
+                     <children>
+                        <Text fill="#566373" layoutX="5.549192422904525E-5" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Livrer" wrappingWidth="36.000002920627594">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </Text>
+                        <CheckBox fx:id="delivrer" disable="true" layoutX="42.0" layoutY="9.0" mnemonicParsing="false" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-1.0" layoutY="33.0" prefHeight="36.0" prefWidth="69.0" style="-fx-border-color: #9A998F; -fx-border-width: 0.2 0 0 0;">
+                     <children>
+                        <Text fill="#566373" layoutX="1.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Utiliser" wrappingWidth="42.3251940459013">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </Text>
+                        <CheckBox fx:id="used" disable="true" layoutX="43.0" layoutY="9.0" mnemonicParsing="false" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="image" fitHeight="100.0" fitWidth="103.0" layoutX="73.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.bottomAnchor="-35.0">
+               <image>
+                  <Image url="@../image/j3.gif" />
+               </image>
+            </ImageView>
+            <Text fill="#00000066" layoutX="36.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verifier si le code argent est utiliser ou pas en cliquant sur" textAlignment="JUSTIFY" wrappingWidth="264.1704053878784">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="btverify" fill="#273a70" layoutX="107.0" layoutY="154.0" onMouseClicked="#verify" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cursor" text="verfier." textAlignment="JUSTIFY" wrappingWidth="56.99999237805605">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="257.0" layoutY="46.0" prefHeight="37.0" prefWidth="115.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0 0  0.2;">
+               <children>
+                  <Text fx:id="montant" fill="#b96262" layoutX="8.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="96.00000367499888">
+                     <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#566373" layoutX="7.399999999999999" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant" wrappingWidth="82.99999460577965">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Label layoutX="349.0" layoutY="151.0" text="Label" textFill="TRANSPARENT" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

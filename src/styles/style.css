@@ -1,0 +1,120 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 oct. 2020, 10:36:43
+    Author     : smartTicket
+*/
+
+.curso{
+    -fx-cursor:hand;
+}
+
+.menuP:hover{
+    -fx-background-color: F1F4F9;
+}
+.cursor:hover{
+    -fx-cursor:hand;
+    -fx-background-color: F1F4F9;
+}
+.labDay{
+    -fx-border-color: CCC;
+    -fx-border-witdh:0.3;
+    -fx-border-radius:50;
+    -fx-text-fill:fff;
+    -fx-font-size:11;
+    -fx-background-color:F6891F;
+    -fx-background-radius:50;
+}
+.lab{
+    -fx-border-color: CCC;
+    -fx-border-witdh:0.3;
+    -fx-border-radius:50;
+    -fx-text-fill:#8794a4;
+    -fx-font-size:11;
+}
+.table-view {
+    -fx-background-color: transparent;
+}
+
+/*2*/
+
+.form_panT{
+    -fx-background-color:  EDEEF4;
+    -fx-border-color: a1a1a1;
+    -fx-border-width: 0.1;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/*3*/
+.labBack{
+    -fx-background-color:  EDEEF4;
+}
+/*2*/
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+/*3*/
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+/*4*/
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+/*5*/
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+.check-box {
+    /* default properties */
+    selected-box-color: black;
+    box-color: black;
+    mark-color: white;
+}
+
+.check-box:selected > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: selected-box-color;
+}
+
+.check-box > .box {
+    /* background color of unselected checkbox */
+    -fx-background-color: box-color;
+}
+
+.check-box:selected > .box > .mark,
+.check-box:indeterminate  > .box > .mark {
+    /* modify mark color */
+    -fx-background-color: mark-color;
+}
+/*.table-row-cell: hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: red;
+}
+.table-row-cell: odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell: even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}*/
+
+/*
+* Data picker
+*/
+.data0.chart-pie { -fx-pie-color: E0E6FE; }
+.data1.chart-pie { -fx-pie-color: FEC45B; }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contro_traitement.MessageController">
+   <children>
+      <GridPane onMouseClicked="#show">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="30.0" prefWidth="103.0">
+               <children>
+                  <Label fx:id="date" alignment="CENTER" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="116.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0.2 0.2;" text="DATE" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="118.0" GridPane.columnIndex="1">
+               <children>
+                  <Label fx:id="num" alignment="CENTER" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="112.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0.2 0;" text="Numéro" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="89.0" GridPane.columnIndex="2">
+               <children>
+                  <Label fx:id="reseau" alignment="CENTER" contentDisplay="RIGHT" layoutX="1.0" prefHeight="24.0" prefWidth="112.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0.2 0;" text="Reseau" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="342.0" GridPane.columnIndex="3">
+               <children>
+                  <Label fx:id="mssg" alignment="CENTER" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="312.0" style="-fx-border-color: #9A998F; -fx-border-width: 0 0.2 0.2 0;" text="Message" textFill="#273971" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</StackPane>
